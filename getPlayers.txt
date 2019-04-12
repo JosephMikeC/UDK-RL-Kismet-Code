@@ -1,783 +1,88 @@
 Begin Object Class=SeqEvent_CarSpawned_TA Name=SeqEvent_CarSpawned_TA_0
    MaxWidth=97
-   OutputLinks(0)=(Links=((LinkedOp=SeqAct_ModifyObjectList'SeqAct_ModifyObjectList_0')),DrawY=938,OverrideDelta=11)
-   VariableLinks(0)=(LinkedVariables=(SeqVar_Object'SeqVar_Object_3'),DrawX=-544,OverrideDelta=16)
+   OutputLinks(0)=(Links=((LinkedOp=SeqAct_ModifyObjectList'SeqAct_ModifyObjectList_0')),DrawY=242,OverrideDelta=11)
+   VariableLinks(0)=(LinkedVariables=(SeqVar_Object'SeqVar_Object_0'),DrawX=272,OverrideDelta=16)
    ObjInstanceVersion=1
    ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-592
-   ObjPosY=872
+   ObjPosX=224
+   ObjPosY=176
    DrawWidth=68
    DrawHeight=128
    Name="SeqEvent_CarSpawned_TA_0"
    ObjectArchetype=SeqEvent_CarSpawned_TA'tagame.Default__SeqEvent_CarSpawned_TA'
 End Object
-Begin Object Class=SeqAct_ModifyObjectList Name=SeqAct_ModifyObjectList_0
-   InputLinks(0)=(DrawY=901,OverrideDelta=14)
-   InputLinks(1)=(DrawY=922,OverrideDelta=35)
-   InputLinks(2)=(DrawY=943,OverrideDelta=56)
-   OutputLinks(0)=(Links=((LinkedOp=SeqAct_DrawText'SeqAct_DrawText_5')),DrawY=922,OverrideDelta=35)
-   VariableLinks(0)=(LinkedVariables=(SeqVar_Object'SeqVar_Object_3'),DrawX=-314,OverrideDelta=16)
-   VariableLinks(1)=(LinkedVariables=(SeqVar_Named'SeqVar_Named_3'),DrawX=-254,OverrideDelta=76)
-   VariableLinks(2)=(LinkedVariables=(SeqVar_Named'SeqVar_Named_8'),DrawX=-173,OverrideDelta=137)
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-352
-   ObjPosY=864
-   DrawWidth=237
-   DrawHeight=125
-   Name="SeqAct_ModifyObjectList_0"
-   ObjectArchetype=SeqAct_ModifyObjectList'Engine.Default__SeqAct_ModifyObjectList'
-End Object
-Begin Object Class=SeqVar_Object Name=SeqVar_Object_3
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-448
-   ObjPosY=1064
-   DrawWidth=32
-   DrawHeight=32
-   Name="SeqVar_Object_3"
-   ObjectArchetype=SeqVar_Object'Engine.Default__SeqVar_Object'
-End Object
 Begin Object Class=SeqVar_ObjectList Name=SeqVar_ObjectList_0
-   VarName="Players"
+   VarName="PlayersInGame"
    ObjInstanceVersion=1
    ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-552
-   ObjPosY=648
+   ObjPosX=439
+   ObjPosY=66
    DrawWidth=32
    DrawHeight=32
    Name="SeqVar_ObjectList_0"
    ObjectArchetype=SeqVar_ObjectList'Engine.Default__SeqVar_ObjectList'
 End Object
-Begin Object Class=SeqVar_Named Name=SeqVar_Named_3
-   ExpectedType=Class'Engine.SeqVar_ObjectList'
-   FindVarName="Players"
+Begin Object Class=SeqAct_ModifyObjectList Name=SeqAct_ModifyObjectList_0
+   InputLinks(0)=(DrawY=237,OverrideDelta=14)
+   InputLinks(1)=(DrawY=258,OverrideDelta=35)
+   InputLinks(2)=(DrawY=279,OverrideDelta=56)
+   OutputLinks(0)=(DrawY=258,OverrideDelta=35)
+   VariableLinks(0)=(LinkedVariables=(SeqVar_Object'SeqVar_Object_0'),DrawX=454,OverrideDelta=16)
+   VariableLinks(1)=(LinkedVariables=(SeqVar_Named'SeqVar_Named_2'),DrawX=514,OverrideDelta=76)
+   VariableLinks(2)=(LinkedVariables=(SeqVar_Named'SeqVar_Named_1'),DrawX=595,OverrideDelta=137)
    ObjInstanceVersion=1
    ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-160
-   ObjPosY=1048
-   ObjColor=(B=102,G=0,R=102,A=255)
+   ObjPosX=416
+   ObjPosY=200
+   DrawWidth=237
+   DrawHeight=125
+   Name="SeqAct_ModifyObjectList_0"
+   ObjectArchetype=SeqAct_ModifyObjectList'Engine.Default__SeqAct_ModifyObjectList'
+End Object
+Begin Object Class=SeqVar_Object Name=SeqVar_Object_0
+   ObjInstanceVersion=1
+   ParentSequence=Sequence'Main_Sequence'
+   ObjPosX=352
+   ObjPosY=360
    DrawWidth=32
    DrawHeight=32
-   Name="SeqVar_Named_3"
-   ObjectArchetype=SeqVar_Named'Engine.Default__SeqVar_Named'
-End Object
-Begin Object Class=SeqVar_Int Name=SeqVar_Int_0
-   VarName="PlayerCount"
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-432
-   ObjPosY=648
-   DrawWidth=32
-   DrawHeight=32
-   Name="SeqVar_Int_0"
-   ObjectArchetype=SeqVar_Int'Engine.Default__SeqVar_Int'
-End Object
-Begin Object Class=SeqVar_Named Name=SeqVar_Named_8
-   ExpectedType=Class'Engine.SeqVar_Int'
-   FindVarName="PlayerCount"
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=8
-   ObjPosY=1056
-   ObjColor=(B=255,G=255,R=0,A=255)
-   DrawWidth=32
-   DrawHeight=32
-   Name="SeqVar_Named_8"
-   ObjectArchetype=SeqVar_Named'Engine.Default__SeqVar_Named'
-End Object
-Begin Object Class=SeqAct_DrawText Name=SeqAct_DrawText_5
-   DisplayTimeSeconds=5.000000
-   DrawTextInfo=(MessageText="Got player")
-   InputLinks(0)=(DrawY=868,OverrideDelta=13)
-   InputLinks(1)=(DrawY=888,OverrideDelta=33)
-   OutputLinks(0)=(DrawY=878,OverrideDelta=23)
-   VariableLinks(0)=(LinkedVariables=(SeqVar_Player'SeqVar_Player_5'),DrawX=111,OverrideDelta=17)
-   VariableLinks(1)=()
-   ObjInstanceVersion=3
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=72
-   ObjPosY=832
-   DrawWidth=78
-   DrawHeight=85
-   Name="SeqAct_DrawText_5"
-   ObjectArchetype=SeqAct_DrawText'Engine.Default__SeqAct_DrawText'
-End Object
-Begin Object Class=SeqVar_Player Name=SeqVar_Player_5
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=80
-   ObjPosY=968
-   DrawWidth=32
-   DrawHeight=32
-   Name="SeqVar_Player_5"
-   ObjectArchetype=SeqVar_Player'Engine.Default__SeqVar_Player'
-End Object
-Begin Object Class=SeqEvent_RoundStart_TA Name=SeqEvent_RoundStart_TA_0
-   MaxWidth=96
-   OutputLinks(0)=(Links=((LinkedOp=SeqAct_AccessObjectList'SeqAct_AccessObjectList_3',InputLinkIdx=3),(LinkedOp=SeqAct_AddGameBall_TA'SeqAct_AddGameBall_TA_1',InputLinkIdx=2)),DrawY=1314,OverrideDelta=11)
-   VariableLinks(0)=(DrawX=-1784,OverrideDelta=16)
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-1832
-   ObjPosY=1248
-   DrawWidth=95
-   DrawHeight=128
-   Name="SeqEvent_RoundStart_TA_0"
-   ObjectArchetype=SeqEvent_RoundStart_TA'tagame.Default__SeqEvent_RoundStart_TA'
-End Object
-Begin Object Class=SeqAct_ActorFactory Name=SeqAct_ActorFactory_1
-   Begin Object Class=ActorFactoryRigidBody Name=ActorFactoryRigidBody_1
-      StaticMesh=StaticMesh'DARTTWO'
-      Name="ActorFactoryRigidBody_1"
-      ObjectArchetype=ActorFactoryRigidBody'Engine.Default__ActorFactoryRigidBody'
-   End Object
-   Factory=ActorFactoryRigidBody'ActorFactoryRigidBody_1'
-   InputLinks(0)=(DrawY=1229,OverrideDelta=14)
-   InputLinks(1)=(DrawY=1251,OverrideDelta=36)
-   InputLinks(2)=(DrawY=1273,OverrideDelta=58)
-   InputLinks(3)=(DrawY=1295,OverrideDelta=80)
-   OutputLinks(0)=(Links=((LinkedOp=SeqAct_SetVelocity'SeqAct_SetVelocity_0')),DrawY=1240,OverrideDelta=25)
-   OutputLinks(1)=(DrawY=1284,OverrideDelta=69)
-   VariableLinks(0)=(LinkedVariables=(SeqVar_Object'SeqVar_Object_4'),DrawX=838,OverrideDelta=16)
-   VariableLinks(1)=(LinkedVariables=(SeqVar_Object'SeqVar_Object_5'),DrawX=906,OverrideDelta=76)
-   VariableLinks(2)=(DrawX=974,OverrideDelta=152)
-   VariableLinks(3)=(DrawX=1042,OverrideDelta=212)
-   VariableLinks(4)=(LinkedVariables=(SeqVar_Vector'SeqVar_Vector_0'),DrawX=1120,OverrideDelta=289)
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=800
-   ObjPosY=1192
-   DrawWidth=368
-   DrawHeight=149
-   Name="SeqAct_ActorFactory_1"
-   ObjectArchetype=SeqAct_ActorFactory'Engine.Default__SeqAct_ActorFactory'
-End Object
-Begin Object Class=SeqAct_AccessObjectList Name=SeqAct_AccessObjectList_3
-   InputLinks(0)=(DrawY=1221,OverrideDelta=14)
-   InputLinks(1)=(DrawY=1243,OverrideDelta=36)
-   InputLinks(2)=(DrawY=1265,OverrideDelta=58)
-   InputLinks(3)=(DrawY=1287,OverrideDelta=80)
-   OutputLinks(0)=(Links=((LinkedOp=SeqAct_IsActionPressed_TA'SeqAct_IsActionPressed_TA_0'),(LinkedOp=SeqAct_AttachToActor'SeqAct_AttachToActor_0')),DrawY=1254,OverrideDelta=47)
-   VariableLinks(0)=(LinkedVariables=(SeqVar_Named'SeqVar_Named_2'),DrawX=-362,OverrideDelta=16)
-   VariableLinks(1)=(LinkedVariables=(SeqVar_Int'SeqVar_Int_2'),DrawX=-306,OverrideDelta=76)
-   VariableLinks(2)=(LinkedVariables=(SeqVar_Object'SeqVar_Object_4'),DrawX=-248,OverrideDelta=128)
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-400
-   ObjPosY=1184
-   DrawWidth=193
-   DrawHeight=149
-   Name="SeqAct_AccessObjectList_3"
-   ObjectArchetype=SeqAct_AccessObjectList'Engine.Default__SeqAct_AccessObjectList'
+   Name="SeqVar_Object_0"
+   ObjectArchetype=SeqVar_Object'Engine.Default__SeqVar_Object'
 End Object
 Begin Object Class=SeqVar_Named Name=SeqVar_Named_2
    ExpectedType=Class'Engine.SeqVar_ObjectList'
-   FindVarName="Players"
+   FindVarName="PlayersInGame"
    ObjInstanceVersion=1
    ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-416
-   ObjPosY=1360
+   ObjPosX=472
+   ObjPosY=360
    ObjColor=(B=102,G=0,R=102,A=255)
    DrawWidth=32
    DrawHeight=32
    Name="SeqVar_Named_2"
    ObjectArchetype=SeqVar_Named'Engine.Default__SeqVar_Named'
 End Object
-Begin Object Class=SeqVar_Int Name=SeqVar_Int_2
+Begin Object Class=SeqVar_Int Name=SeqVar_Int_0
+   VarName="PlayerCount"
    ObjInstanceVersion=1
    ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-323
-   ObjPosY=1372
+   ObjPosX=592
+   ObjPosY=96
    DrawWidth=32
    DrawHeight=32
-   Name="SeqVar_Int_2"
+   Name="SeqVar_Int_0"
    ObjectArchetype=SeqVar_Int'Engine.Default__SeqVar_Int'
 End Object
-Begin Object Class=SeqVar_Object Name=SeqVar_Object_4
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-144
-   ObjPosY=1384
-   DrawWidth=32
-   DrawHeight=32
-   Name="SeqVar_Object_4"
-   ObjectArchetype=SeqVar_Object'Engine.Default__SeqVar_Object'
-End Object
-Begin Object Class=SeqAct_IsActionPressed_TA Name=SeqAct_IsActionPressed_TA_0
-   ActionName="UsePickup"
-   InputLinks(0)=(DrawY=1222,OverrideDelta=23)
-   OutputLinks(0)=(Links=((LinkedOp=SeqAct_DrawText'SeqAct_DrawText_8')),DrawY=1212,OverrideDelta=13)
-   OutputLinks(1)=(Links=((LinkedOp=SeqAct_IsActionPressed_TA'SeqAct_IsActionPressed_TA_0')),DrawY=1232,OverrideDelta=33)
-   VariableLinks(0)=(LinkedVariables=(SeqVar_Object'SeqVar_Object_4'),DrawX=22,OverrideDelta=30)
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-40
-   ObjPosY=1176
-   DrawWidth=125
-   DrawHeight=85
-   Name="SeqAct_IsActionPressed_TA_0"
-   ObjectArchetype=SeqAct_IsActionPressed_TA'tagame.Default__SeqAct_IsActionPressed_TA'
-End Object
-Begin Object Class=SeqVar_Object Name=SeqVar_Object_5
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=1232
-   ObjPosY=1400
-   ObjComment="Dart"
-   DrawWidth=32
-   DrawHeight=32
-   Name="SeqVar_Object_5"
-   ObjectArchetype=SeqVar_Object'Engine.Default__SeqVar_Object'
-End Object
-Begin Object Class=SeqAct_GetLocationAndRotation Name=SeqAct_GetLocationAndRotation_0
-   InputLinks(0)=(DrawY=1234,OverrideDelta=11)
-   OutputLinks(0)=(Links=((LinkedOp=SeqAct_ActorFactory'SeqAct_ActorFactory_1')),DrawY=1234,OverrideDelta=11)
-   VariableLinks(0)=(LinkedVariables=(SeqVar_Object'SeqVar_Object_4'),DrawX=446,OverrideDelta=16)
-   VariableLinks(1)=(LinkedVariables=(SeqVar_Vector'SeqVar_Vector_1'),DrawX=512,OverrideDelta=76)
-   VariableLinks(2)=(LinkedVariables=(SeqVar_Vector'SeqVar_Vector_0'),DrawX=583,OverrideDelta=148)
-   VariableLinks(3)=(DrawX=654,OverrideDelta=219)
-   ObjInstanceVersion=3
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=408
-   ObjPosY=1200
-   DrawWidth=290
-   DrawHeight=77
-   Name="SeqAct_GetLocationAndRotation_0"
-   ObjectArchetype=SeqAct_GetLocationAndRotation'Engine.Default__SeqAct_GetLocationAndRotation'
-End Object
-Begin Object Class=SeqVar_Vector Name=SeqVar_Vector_0
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=647
-   ObjPosY=1444
-   ObjComment="Rotation"
-   DrawWidth=32
-   DrawHeight=32
-   Name="SeqVar_Vector_0"
-   ObjectArchetype=SeqVar_Vector'Engine.Default__SeqVar_Vector'
-End Object
-Begin Object Class=SeqVar_Vector Name=SeqVar_Vector_1
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=520
-   ObjPosY=1448
-   ObjComment="Location"
-   DrawWidth=32
-   DrawHeight=32
-   Name="SeqVar_Vector_1"
-   ObjectArchetype=SeqVar_Vector'Engine.Default__SeqVar_Vector'
-End Object
-Begin Object Class=SeqAct_SetVelocity Name=SeqAct_SetVelocity_0
-   InputLinks(0)=(DrawY=1242,OverrideDelta=11)
-   OutputLinks(0)=(Links=((LinkedOp=SeqAct_Delay'SeqAct_Delay_5')),DrawY=1242,OverrideDelta=11)
-   VariableLinks(0)=(LinkedVariables=(SeqVar_Object'SeqVar_Object_5'),DrawX=1502,OverrideDelta=16)
-   VariableLinks(1)=(LinkedVariables=(SeqVar_Vector'SeqVar_Vector_0'),DrawX=1566,OverrideDelta=76)
-   VariableLinks(2)=(LinkedVariables=(SeqVar_Float'SeqVar_Float_0'),DrawX=1635,OverrideDelta=145)
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=1464
-   ObjPosY=1208
-   DrawWidth=214
-   DrawHeight=77
-   Name="SeqAct_SetVelocity_0"
-   ObjectArchetype=SeqAct_SetVelocity'Engine.Default__SeqAct_SetVelocity'
-End Object
-Begin Object Class=SeqVar_Float Name=SeqVar_Float_0
-   FloatValue=10000.000000
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=1603
-   ObjPosY=1305
-   DrawWidth=32
-   DrawHeight=32
-   Name="SeqVar_Float_0"
-   ObjectArchetype=SeqVar_Float'Engine.Default__SeqVar_Float'
-End Object
-Begin Object Class=SeqVar_Player Name=SeqVar_Player_8
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=240
-   ObjPosY=1336
-   DrawWidth=32
-   DrawHeight=32
-   Name="SeqVar_Player_8"
-   ObjectArchetype=SeqVar_Player'Engine.Default__SeqVar_Player'
-End Object
-Begin Object Class=SeqAct_DrawText Name=SeqAct_DrawText_8
-   DisplayTimeSeconds=0.500000
-   DrawTextInfo=(MessageText="R was presseddddd")
-   InputLinks(0)=(DrawY=1236,OverrideDelta=13)
-   InputLinks(1)=(DrawY=1256,OverrideDelta=33)
-   OutputLinks(0)=(Links=((LinkedOp=SeqAct_GetLocationAndRotation'SeqAct_GetLocationAndRotation_0')),DrawY=1246,OverrideDelta=23)
-   VariableLinks(0)=(LinkedVariables=(SeqVar_Player'SeqVar_Player_8'),DrawX=271,OverrideDelta=17)
-   VariableLinks(1)=()
-   ObjInstanceVersion=3
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=232
-   ObjPosY=1200
-   DrawWidth=78
-   DrawHeight=85
-   Name="SeqAct_DrawText_8"
-   ObjectArchetype=SeqAct_DrawText'Engine.Default__SeqAct_DrawText'
-End Object
-Begin Object Class=SeqAct_Delay Name=SeqAct_Delay_5
-   Duration=0.500000
-   InputLinks(0)=(DrawY=1242,OverrideDelta=11)
-   InputLinks(1)=(DrawY=1282,bHidden=True,OverrideDelta=35)
-   InputLinks(2)=(DrawY=1303,bHidden=True,OverrideDelta=56)
-   OutputLinks(0)=(Links=((LinkedOp=SeqAct_IsActionPressed_TA'SeqAct_IsActionPressed_TA_0')),DrawY=1242,OverrideDelta=11)
-   OutputLinks(1)=(DrawY=1298,bHidden=True,OverrideDelta=51)
-   VariableLinks(0)=(bHidden=True,DrawX=-84,OverrideDelta=25)
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=1752
-   ObjPosY=1208
-   DrawWidth=101
-   DrawHeight=45
-   Name="SeqAct_Delay_5"
-   ObjectArchetype=SeqAct_Delay'Engine.Default__SeqAct_Delay'
-End Object
-Begin Object Class=SeqEvent_Touch Name=SeqEvent_Touch_3
-   Originator=DynamicTriggerVolume'DynamicTriggerVolume_0'
-   MaxTriggerCount=0
-   bPlayerOnly=False
-   MaxWidth=220
-   OutputLinks(0)=(Links=((LinkedOp=SeqAct_ModifyObjectList'SeqAct_ModifyObjectList_2')),DrawY=1877,OverrideDelta=14)
-   OutputLinks(1)=(Links=((LinkedOp=SeqAct_ModifyObjectList'SeqAct_ModifyObjectList_1',InputLinkIdx=1)),DrawY=1898,OverrideDelta=35)
-   OutputLinks(2)=(DrawY=1919,OverrideDelta=56)
-   VariableLinks(0)=(LinkedVariables=(SeqVar_Object'SeqVar_Object_7'),DrawX=-538,OverrideDelta=78)
-   ObjInstanceVersion=2
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-648
-   ObjPosY=1808
-   ObjName="DynamicTriggerVolume_0 Touch"
-   DrawWidth=155
-   DrawHeight=176
-   Name="SeqEvent_Touch_3"
-   ObjectArchetype=SeqEvent_Touch'Engine.Default__SeqEvent_Touch'
-End Object
-Begin Object Class=SeqVar_ObjectList Name=SeqVar_ObjectList_1
-   VarName="InSight"
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-392
-   ObjPosY=1712
-   DrawWidth=32
-   DrawHeight=32
-   Name="SeqVar_ObjectList_1"
-   ObjectArchetype=SeqVar_ObjectList'Engine.Default__SeqVar_ObjectList'
-End Object
-Begin Object Class=SeqVar_Named Name=SeqVar_Named_6
-   ExpectedType=Class'Engine.SeqVar_ObjectList'
-   FindVarName="InSight"
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-149
-   ObjPosY=1931
-   ObjColor=(B=102,G=0,R=102,A=255)
-   DrawWidth=32
-   DrawHeight=32
-   Name="SeqVar_Named_6"
-   ObjectArchetype=SeqVar_Named'Engine.Default__SeqVar_Named'
-End Object
-Begin Object Class=SeqAct_ModifyObjectList Name=SeqAct_ModifyObjectList_2
-   InputLinks(0)=(DrawY=1802,OverrideDelta=11)
-   InputLinks(1)=(DrawY=1826,bHidden=True,OverrideDelta=35)
-   InputLinks(2)=(DrawY=1847,bHidden=True,OverrideDelta=56)
-   OutputLinks(0)=(Links=((LinkedOp=SeqAct_ConvertToString'SeqAct_ConvertToString_0')),DrawY=1802,OverrideDelta=11)
-   VariableLinks(0)=(LinkedVariables=(SeqVar_Object'SeqVar_Object_7'),DrawX=-194,OverrideDelta=16)
-   VariableLinks(1)=(LinkedVariables=(SeqVar_Named'SeqVar_Named_6'),DrawX=-134,OverrideDelta=76)
-   VariableLinks(2)=(LinkedVariables=(SeqVar_Named'SeqVar_Named_7'),DrawX=-53,OverrideDelta=137)
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-232
-   ObjPosY=1768
-   DrawWidth=237
-   DrawHeight=77
-   Name="SeqAct_ModifyObjectList_2"
-   ObjectArchetype=SeqAct_ModifyObjectList'Engine.Default__SeqAct_ModifyObjectList'
-End Object
-Begin Object Class=SeqVar_Object Name=SeqVar_Object_7
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-352
-   ObjPosY=1912
-   DrawWidth=32
-   DrawHeight=32
-   Name="SeqVar_Object_7"
-   ObjectArchetype=SeqVar_Object'Engine.Default__SeqVar_Object'
-End Object
-Begin Object Class=SeqAct_ModifyObjectList Name=SeqAct_ModifyObjectList_1
-   InputLinks(0)=(DrawY=2074,bHidden=True,OverrideDelta=35)
-   InputLinks(1)=(DrawY=2098,OverrideDelta=11)
-   InputLinks(2)=(DrawY=2095,bHidden=True,OverrideDelta=56)
-   OutputLinks(0)=(DrawY=2074,bHidden=True,OverrideDelta=35)
-   VariableLinks(0)=(LinkedVariables=(SeqVar_Object'SeqVar_Object_7'),DrawX=-162,OverrideDelta=16)
-   VariableLinks(1)=(LinkedVariables=(SeqVar_Named'SeqVar_Named_4'),DrawX=-102,OverrideDelta=76)
-   VariableLinks(2)=(LinkedVariables=(SeqVar_Named'SeqVar_Named_7'),DrawX=-21,OverrideDelta=137)
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-200
-   ObjPosY=2064
-   DrawWidth=237
-   DrawHeight=77
-   Name="SeqAct_ModifyObjectList_1"
-   ObjectArchetype=SeqAct_ModifyObjectList'Engine.Default__SeqAct_ModifyObjectList'
-End Object
-Begin Object Class=SeqVar_Named Name=SeqVar_Named_4
-   ExpectedType=Class'Engine.SeqVar_ObjectList'
-   FindVarName="InSight"
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-144
-   ObjPosY=2168
-   ObjColor=(B=102,G=0,R=102,A=255)
-   DrawWidth=32
-   DrawHeight=32
-   Name="SeqVar_Named_4"
-   ObjectArchetype=SeqVar_Named'Engine.Default__SeqVar_Named'
-End Object
-Begin Object Class=SeqAct_ConvertToString Name=SeqAct_ConvertToString_0
-   InputLinks(0)=(DrawY=1834,OverrideDelta=11)
-   OutputLinks(0)=(DrawY=1834,OverrideDelta=11)
-   VariableLinks(0)=(LinkedVariables=(SeqVar_Named'SeqVar_Named_7'),DrawX=133,OverrideDelta=16)
-   VariableLinks(1)=(LinkedVariables=(SeqVar_String'SeqVar_String_0'),DrawX=193,OverrideDelta=74)
-   ObjInstanceVersion=2
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=96
-   ObjPosY=1800
-   DrawWidth=136
-   DrawHeight=61
-   Name="SeqAct_ConvertToString_0"
-   ObjectArchetype=SeqAct_ConvertToString'Engine.Default__SeqAct_ConvertToString'
-End Object
-Begin Object Class=SeqVar_String Name=SeqVar_String_0
-   VarName="sight"
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=184
-   ObjPosY=1888
-   DrawWidth=32
-   DrawHeight=32
-   Name="SeqVar_String_0"
-   ObjectArchetype=SeqVar_String'Engine.Default__SeqVar_String'
-End Object
-Begin Object Class=SeqVar_Object Name=SeqVar_Object_8
-   ObjValue=DynamicTriggerVolume'DynamicTriggerVolume_0'
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=48
-   ObjPosY=1584
-   DrawWidth=32
-   DrawHeight=32
-   Name="SeqVar_Object_8"
-   ObjectArchetype=SeqVar_Object'Engine.Default__SeqVar_Object'
-End Object
-Begin Object Class=SeqAct_AttachToActor Name=SeqAct_AttachToActor_0
-   InputLinks(0)=(DrawY=1530,OverrideDelta=11)
-   OutputLinks(0)=(Links=((LinkedOp=SeqAct_Delay'SeqAct_Delay_7')),DrawY=1530,OverrideDelta=11)
-   VariableLinks(0)=(LinkedVariables=(SeqVar_Object'SeqVar_Object_4'),DrawX=6,OverrideDelta=16)
-   VariableLinks(1)=(LinkedVariables=(SeqVar_Object'SeqVar_Object_8'),DrawX=83,OverrideDelta=76)
-   ObjInstanceVersion=2
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-32
-   ObjPosY=1496
-   DrawWidth=170
-   DrawHeight=61
-   Name="SeqAct_AttachToActor_0"
-   ObjectArchetype=SeqAct_AttachToActor'Engine.Default__SeqAct_AttachToActor'
-End Object
-Begin Object Class=SeqVar_Int Name=SeqVar_Int_4
-   VarName="ObjectCount"
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-104
-   ObjPosY=1640
-   DrawWidth=32
-   DrawHeight=32
-   Name="SeqVar_Int_4"
-   ObjectArchetype=SeqVar_Int'Engine.Default__SeqVar_Int'
-End Object
-Begin Object Class=SeqVar_Named Name=SeqVar_Named_7
+Begin Object Class=SeqVar_Named Name=SeqVar_Named_1
    ExpectedType=Class'Engine.SeqVar_Int'
-   FindVarName="ObjectCount"
+   FindVarName="PlayerCount"
    ObjInstanceVersion=1
    ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=48
-   ObjPosY=1904
+   ObjPosX=576
+   ObjPosY=360
    ObjColor=(B=255,G=255,R=0,A=255)
    DrawWidth=32
    DrawHeight=32
-   Name="SeqVar_Named_7"
+   Name="SeqVar_Named_1"
    ObjectArchetype=SeqVar_Named'Engine.Default__SeqVar_Named'
-End Object
-Begin Object Class=SeqAct_DrawText Name=SeqAct_DrawText_7
-   DisplayTimeSeconds=0.010000
-   DrawTextInfo=(MessageText="OBJECTS IN SIGHT",MessageOffset=(X=0.000000,Y=50.000000))
-   InputLinks(0)=(DrawY=1608,OverrideDelta=13)
-   InputLinks(1)=(DrawY=1628,OverrideDelta=33)
-   OutputLinks(0)=(DrawY=1618,OverrideDelta=23)
-   VariableLinks(0)=(LinkedVariables=(SeqVar_Player'SeqVar_Player_9'),DrawX=456,OverrideDelta=16)
-   VariableLinks(1)=(LinkedVariables=(SeqVar_String'SeqVar_String_0'),bHidden=False,DrawX=513,OverrideDelta=76)
-   ObjInstanceVersion=3
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=418
-   ObjPosY=1572
-   DrawWidth=131
-   DrawHeight=85
-   Name="SeqAct_DrawText_7"
-   ObjectArchetype=SeqAct_DrawText'Engine.Default__SeqAct_DrawText'
-End Object
-Begin Object Class=SeqVar_Player Name=SeqVar_Player_9
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=368
-   ObjPosY=1704
-   DrawWidth=32
-   DrawHeight=32
-   Name="SeqVar_Player_9"
-   ObjectArchetype=SeqVar_Player'Engine.Default__SeqVar_Player'
-End Object
-Begin Object Class=SeqAct_Delay Name=SeqAct_Delay_7
-   Duration=0.010000
-   InputLinks(0)=(DrawY=1605,OverrideDelta=14)
-   InputLinks(1)=(DrawY=1626,OverrideDelta=35)
-   InputLinks(2)=(DrawY=1647,OverrideDelta=56)
-   OutputLinks(0)=(Links=((LinkedOp=SeqAct_DrawText'SeqAct_DrawText_7'),(LinkedOp=SeqAct_Delay'SeqAct_Delay_7')),DrawY=1610,OverrideDelta=19)
-   OutputLinks(1)=(DrawY=1642,OverrideDelta=51)
-   VariableLinks(0)=(DrawX=276,OverrideDelta=25)
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=224
-   ObjPosY=1568
-   DrawWidth=106
-   DrawHeight=109
-   Name="SeqAct_Delay_7"
-   ObjectArchetype=SeqAct_Delay'Engine.Default__SeqAct_Delay'
-End Object
-Begin Object Class=SeqEvent_Touch Name=SeqEvent_Touch_1
-   Originator=DynamicTriggerVolume'DynamicTriggerVolume_0'
-   MaxTriggerCount=0
-   bPlayerOnly=False
-   MaxWidth=220
-   OutputLinks(0)=(Links=((LinkedOp=SeqAct_SetLocation'SeqAct_SetLocation_0')),DrawY=2341,OverrideDelta=14)
-   OutputLinks(1)=(DrawY=2362,OverrideDelta=35)
-   OutputLinks(2)=(DrawY=2383,OverrideDelta=56)
-   VariableLinks(0)=(DrawX=-562,OverrideDelta=78)
-   ObjInstanceVersion=2
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-672
-   ObjPosY=2272
-   ObjName="DynamicTriggerVolume_0 Touch"
-   DrawWidth=155
-   DrawHeight=176
-   Name="SeqEvent_Touch_1"
-   ObjectArchetype=SeqEvent_Touch'Engine.Default__SeqEvent_Touch'
-End Object
-Begin Object Class=SeqAct_AddGameBall_TA Name=SeqAct_AddGameBall_TA_1
-   InputLinks(0)=(DrawY=1445,OverrideDelta=14)
-   InputLinks(1)=(DrawY=1467,OverrideDelta=36)
-   InputLinks(2)=(DrawY=1489,OverrideDelta=58)
-   InputLinks(3)=(DrawY=1511,OverrideDelta=80)
-   OutputLinks(0)=(DrawY=1445,OverrideDelta=14)
-   OutputLinks(1)=(DrawY=1467,OverrideDelta=36)
-   OutputLinks(2)=(Links=((LinkedOp=SeqAct_DrawText'SeqAct_DrawText_10')),DrawY=1489,OverrideDelta=58)
-   OutputLinks(3)=(DrawY=1511,OverrideDelta=80)
-   VariableLinks(0)=(LinkedVariables=(SeqVar_Player'SeqVar_Player_11'),DrawX=-1456,OverrideDelta=16)
-   VariableLinks(1)=(DrawX=-1375,OverrideDelta=96)
-   VariableLinks(2)=(DrawX=-1296,OverrideDelta=178)
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-1504
-   ObjPosY=1408
-   DrawWidth=254
-   DrawHeight=149
-   Name="SeqAct_AddGameBall_TA_1"
-   ObjectArchetype=SeqAct_AddGameBall_TA'tagame.Default__SeqAct_AddGameBall_TA'
-End Object
-Begin Object Class=SeqVar_Object Name=SeqVar_Object_11
-   VarName="Ball"
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-640
-   ObjPosY=2144
-   DrawWidth=32
-   DrawHeight=32
-   Name="SeqVar_Object_11"
-   ObjectArchetype=SeqVar_Object'Engine.Default__SeqVar_Object'
-End Object
-Begin Object Class=SeqVar_Named Name=SeqVar_Named_9
-   ExpectedType=Class'Engine.SeqVar_Object'
-   FindVarName="Ball"
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-192
-   ObjPosY=2416
-   ObjColor=(B=255,G=0,R=255,A=255)
-   DrawWidth=32
-   DrawHeight=32
-   Name="SeqVar_Named_9"
-   ObjectArchetype=SeqVar_Named'Engine.Default__SeqVar_Named'
-End Object
-Begin Object Class=SeqAct_DrawText Name=SeqAct_DrawText_10
-   DisplayTimeSeconds=3.000000
-   DrawTextInfo=(MessageText="DESTROYED ALL",MessageOffset=(X=0.000000,Y=100.000000))
-   InputLinks(0)=(DrawY=1460,OverrideDelta=13)
-   InputLinks(1)=(DrawY=1480,OverrideDelta=33)
-   OutputLinks(0)=(Links=((LinkedOp=SeqAct_Delay'SeqAct_Delay_8')),DrawY=1470,OverrideDelta=23)
-   VariableLinks(0)=(LinkedVariables=(SeqVar_Player'SeqVar_Player_12'),DrawX=-1113,OverrideDelta=17)
-   VariableLinks(1)=()
-   ObjInstanceVersion=3
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-1152
-   ObjPosY=1424
-   DrawWidth=78
-   DrawHeight=85
-   Name="SeqAct_DrawText_10"
-   ObjectArchetype=SeqAct_DrawText'Engine.Default__SeqAct_DrawText'
-End Object
-Begin Object Class=SeqVar_Player Name=SeqVar_Player_12
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-1136
-   ObjPosY=1576
-   DrawWidth=32
-   DrawHeight=32
-   Name="SeqVar_Player_12"
-   ObjectArchetype=SeqVar_Player'Engine.Default__SeqVar_Player'
-End Object
-Begin Object Class=SeqAct_AddGameBall_TA Name=SeqAct_AddGameBall_TA_0
-   InputLinks(0)=(DrawY=1429,OverrideDelta=14)
-   InputLinks(1)=(DrawY=1451,OverrideDelta=36)
-   InputLinks(2)=(DrawY=1473,OverrideDelta=58)
-   InputLinks(3)=(DrawY=1495,OverrideDelta=80)
-   OutputLinks(0)=(Links=((LinkedOp=SeqAct_DrawText'SeqAct_DrawText_9')),DrawY=1429,OverrideDelta=14)
-   OutputLinks(1)=(DrawY=1451,OverrideDelta=36)
-   OutputLinks(2)=(DrawY=1473,OverrideDelta=58)
-   OutputLinks(3)=(DrawY=1495,OverrideDelta=80)
-   VariableLinks(0)=(LinkedVariables=(SeqVar_Player'SeqVar_Player_7'),DrawX=-784,OverrideDelta=16)
-   VariableLinks(1)=(LinkedVariables=(SeqVar_Object'SeqVar_Object_13'),DrawX=-703,OverrideDelta=96)
-   VariableLinks(2)=(LinkedVariables=(SeqVar_Named'SeqVar_Named_10'),DrawX=-624,OverrideDelta=178)
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-832
-   ObjPosY=1392
-   DrawWidth=254
-   DrawHeight=149
-   Name="SeqAct_AddGameBall_TA_0"
-   ObjectArchetype=SeqAct_AddGameBall_TA'tagame.Default__SeqAct_AddGameBall_TA'
-End Object
-Begin Object Class=SeqVar_Named Name=SeqVar_Named_10
-   ExpectedType=Class'Engine.SeqVar_Object'
-   FindVarName="Ball"
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-640
-   ObjPosY=1584
-   ObjColor=(B=255,G=0,R=255,A=255)
-   DrawWidth=32
-   DrawHeight=32
-   Name="SeqVar_Named_10"
-   ObjectArchetype=SeqVar_Named'Engine.Default__SeqVar_Named'
-End Object
-Begin Object Class=SeqVar_Player Name=SeqVar_Player_11
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-1480
-   ObjPosY=1576
-   DrawWidth=32
-   DrawHeight=32
-   Name="SeqVar_Player_11"
-   ObjectArchetype=SeqVar_Player'Engine.Default__SeqVar_Player'
-End Object
-Begin Object Class=SeqVar_Player Name=SeqVar_Player_7
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-848
-   ObjPosY=1576
-   DrawWidth=32
-   DrawHeight=32
-   Name="SeqVar_Player_7"
-   ObjectArchetype=SeqVar_Player'Engine.Default__SeqVar_Player'
-End Object
-Begin Object Class=SeqAct_Delay Name=SeqAct_Delay_8
-   InputLinks(0)=(DrawY=1461,OverrideDelta=14)
-   InputLinks(1)=(DrawY=1482,OverrideDelta=35)
-   InputLinks(2)=(DrawY=1503,OverrideDelta=56)
-   OutputLinks(0)=(Links=((LinkedOp=SeqAct_AddGameBall_TA'SeqAct_AddGameBall_TA_0')),DrawY=1466,OverrideDelta=19)
-   OutputLinks(1)=(DrawY=1498,OverrideDelta=51)
-   VariableLinks(0)=(DrawX=-956,OverrideDelta=25)
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-1008
-   ObjPosY=1424
-   DrawWidth=106
-   DrawHeight=109
-   Name="SeqAct_Delay_8"
-   ObjectArchetype=SeqAct_Delay'Engine.Default__SeqAct_Delay'
-End Object
-Begin Object Class=SeqVar_Player Name=SeqVar_Player_10
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-480
-   ObjPosY=1560
-   DrawWidth=32
-   DrawHeight=32
-   Name="SeqVar_Player_10"
-   ObjectArchetype=SeqVar_Player'Engine.Default__SeqVar_Player'
-End Object
-Begin Object Class=SeqAct_DrawText Name=SeqAct_DrawText_9
-   DisplayTimeSeconds=3.000000
-   DrawTextInfo=(MessageText="ADDED",MessageOffset=(X=0.000000,Y=100.000000))
-   InputLinks(0)=(DrawY=1444,OverrideDelta=13)
-   InputLinks(1)=(DrawY=1464,OverrideDelta=33)
-   OutputLinks(0)=(DrawY=1454,OverrideDelta=23)
-   VariableLinks(0)=(LinkedVariables=(SeqVar_Player'SeqVar_Player_10'),DrawX=-457,OverrideDelta=17)
-   VariableLinks(1)=()
-   ObjInstanceVersion=3
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-496
-   ObjPosY=1408
-   DrawWidth=78
-   DrawHeight=85
-   Name="SeqAct_DrawText_9"
-   ObjectArchetype=SeqAct_DrawText'Engine.Default__SeqAct_DrawText'
-End Object
-Begin Object Class=SeqVar_Object Name=SeqVar_Object_13
-   ObjValue=VolumePathNode'VolumePathNode_0'
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-736
-   ObjPosY=1576
-   DrawWidth=32
-   DrawHeight=32
-   Name="SeqVar_Object_13"
-   ObjectArchetype=SeqVar_Object'Engine.Default__SeqVar_Object'
-End Object
-Begin Object Class=SeqVar_Object Name=SeqVar_Object_14
-   ObjValue=VolumePathNode'VolumePathNode_0'
-   ObjInstanceVersion=1
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-360
-   ObjPosY=2400
-   DrawWidth=32
-   DrawHeight=32
-   Name="SeqVar_Object_14"
-   ObjectArchetype=SeqVar_Object'Engine.Default__SeqVar_Object'
-End Object
-Begin Object Class=SeqAct_SetLocation Name=SeqAct_SetLocation_0
-   InputLinks(0)=(DrawY=2330,OverrideDelta=11)
-   OutputLinks(0)=(DrawY=2330,OverrideDelta=11)
-   VariableLinks(0)=(LinkedVariables=(SeqVar_Object'SeqVar_Object_14'),DrawX=-308,OverrideDelta=16)
-   VariableLinks(1)=(DrawX=-237,OverrideDelta=88)
-   VariableLinks(2)=(LinkedVariables=(SeqVar_Named'SeqVar_Named_9'),DrawX=-171,OverrideDelta=159)
-   ObjInstanceVersion=3
-   ParentSequence=Sequence'Main_Sequence'
-   ObjPosX=-352
-   ObjPosY=2296
-   DrawWidth=219
-   DrawHeight=61
-   Name="SeqAct_SetLocation_0"
-   ObjectArchetype=SeqAct_SetLocation'Engine.Default__SeqAct_SetLocation'
 End Object
